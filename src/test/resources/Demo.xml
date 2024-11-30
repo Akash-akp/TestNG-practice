@@ -1,9 +1,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Calculator Suite" verbose="1">
+<suite name="Calculator Suite" verbose="1" parallel="true">
     <test name="Calculator Test">
+        <parameter name="desiredNumber" value="10"/>
         <classes>
-
+            <class name="org.example.CalculatorTest"/>
         </classes>
     </test>
+<!--    <test name="">-->
+<!--        <classes>-->
+<!--            <class name=""></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="">-->
+<!--        <classes>-->
+<!--            <class name=""></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
